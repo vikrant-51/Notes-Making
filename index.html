@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Notes</title>
+        <link rel="stylesheet" href="NotesMaking.css">
+        <link rel="stylesheet" href="nav-bar.css">
+        <link rel="stylesheet" href="footer.css">
+    </head>
+    <body>
+       <nav>
+        <a  onclick="clickSingleA(this)" class="single active" href="home.html">Home</a>
+<!--
+        <a onclick="clickSingleA(this)" class="single" href="">Products</a>
+        <a onclick="clickSingleA(this)" class="single" href="">Contact</a>
+        <a onclick="clickSingleA(this)" class="single" href="login.html">Login</a>
+-->
+        <input type="search" id="searchTxt" placeholder="Search your note">
+    </nav>
+        <div class="container">
+           <h1>Welcome to Magic Notes</h1>
+               <div class="form">
+                    <p>Add a title</p>
+                    <textarea id="addTitle" rows="2" cols="40"></textarea>
+                    <p>Add a note</p>
+                    <textarea id="addTxt" rows="3" style="width: 98%";></textarea>
+                    <br>
+                    <button id="addbtn">Add Note</button>
+                </div>
+                <hr>
+                <h2>Your Notes</h2>
+                <hr>
+                <div id="notes">
+                
+                </div>
+        </div>
+        <footer>
+        <div class="upper">
+          <a href="" id="gmail">Gmail</a>
+          <a href="" id="facebook">Facebook</a>
+          <a href="" id="linkedin">LinkedIn</a>
+          <a href="" id="github">GitHub</a>
+        </div><hr>
+        <div class="lower">
+          <p>Ok that's enough. Please have a look at my work.</p>
+          <p>&copy;Sample</p>
+        </div>
+    </footer>
+    </body>
+<!--<script src="RockPaperSicssors.js"></script> -->
+<script src="NotesMaking.js"></script>
+</html>
