@@ -1,0 +1,73 @@
+/*
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*/
+
+.container {
+  width: 900px;
+  margin: 3px auto;
+  margin: 80px auto;
+  /*    background-color: ;*/
+}
+
+.container h1,
+h3,
+h2 {
+  text-align: center;
+}
+
+hr {
+  width: 850px;
+  margin: 3px auto;
+}
+
+.form {
+  width: 850px;
+  border: 1px solid black;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+#notes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  width: 255px;
+  /*    text-align: center;*/
+}
+
+#title,
+#main-note {
+  margin: 8px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #1d5668;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 8px 15px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #1d3d56;
+  color: #fff;
+}
+
+/*
+footer hr {
+  margin: 0;
+  width: 250vh;
+}
+*/

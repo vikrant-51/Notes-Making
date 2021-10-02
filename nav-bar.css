@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+nav {
+  background-color: hsl(200, 4%, 16%);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 7px;
+  padding: 5px;
+}
+
+a.hover,
+a.active {
+  border-bottom: 5px solid white;
+}
+
+/*
+nav a:first-child{
+    border-bottom:  5px solid white;
+}*/
