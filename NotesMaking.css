@@ -1,56 +1,49 @@
-/*
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-*/
-
 .container {
-  width: 900px;
+  width: 100%;
   margin: 3px auto;
   margin: 80px auto;
   /*    background-color: ;*/
 }
 
-.container h1,
-h3,
-h2 {
+.container h1, .head-note {
   text-align: center;
 }
 
 hr {
-  width: 850px;
-  margin: 3px auto;
+  width: 100%;
+    margin: auto 10px;
+    background-color: #000;
 }
 
 .form {
-  width: 850px;
-  border: 1px solid black;
-  margin: 10px auto;
-  padding: 10px;
+    width: 100%;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 10px;
 }
+.form textarea{
+        width: 99%;
+    }
 
-#notes {
-  display: flex;
-  flex-wrap: wrap;
+#notes{
+    width: 100%;
 }
 
 .card {
   border: 1px solid black;
   padding: 10px;
-  margin: 10px;
-  width: 255px;
-  /*    text-align: center;*/
-}
-
-#title,
-#main-note {
-  margin: 8px;
+  margin: 20px;
+  width: 90%;
 }
 
 button {
+    width: 100%;
   cursor: pointer;
   background-color: #1d5668;
   color: #fff;
@@ -60,14 +53,48 @@ button {
   margin-top: 10px;
 }
 
+@media only screen and (min-width: 768px){
+    .form {
+        width: 700px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .form textarea{
+        width: 90%;
+    }
+    #notes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 700px;
+        margin: 10px auto;
+    }
+    .card {
+        width: 170px;
+    }
+    
+    button {
+        width: 100px;
+        cursor: pointer;
+        background-color: #1d5668;
+        color: #fff;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        padding: 8px 10px;
+        margin-top: 10px;
+    }
+    hr{
+        width: 700px;
+        margin: auto;
+    }
+}
+
+#title,
+#main-note {
+  margin-top: 10px;
+}
+
 button:hover {
   background-color: #1d3d56;
   color: #fff;
 }
 
-/*
-footer hr {
-  margin: 0;
-  width: 250vh;
-}
-*/
