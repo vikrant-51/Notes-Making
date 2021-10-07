@@ -22,7 +22,11 @@ a.active {
   border-bottom: 5px solid white;
 }
 
-/*
-nav a:first-child{
-    border-bottom:  5px solid white;
-}*/
+nav input[type = search]{
+    float: right;
+    padding: 6px;
+    margin-top: 5px; 
+    margin-right: 16px;
+    border: none;
+    outline: 0;
+}
