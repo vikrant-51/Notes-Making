@@ -7,7 +7,7 @@ nav {
   padding: 10px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 
 nav a {
