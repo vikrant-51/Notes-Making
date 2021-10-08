@@ -76,7 +76,7 @@ search.addEventListener("input", function() {
   let card = document.getElementsByClassName("card");
   Array.from(card).forEach(function(element) {
     let cardTxt = element.getElementsByTagName("p")[0].innerText;
-    if (cardTxt.includes(searchVal)) {
+    if (cardTxt.includes(searchVal.toString())) {
       element.style.display = "block";
     } else {
       element.style.display = "none";
