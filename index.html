@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Notes</title>
-        <link rel="stylesheet" href="NotesMaking.css">
-        <link rel="stylesheet" href="nav-bar.css">
-        <link rel="stylesheet" href="footer.css">
-    </head>
-    <body>
-       <nav>
-        <a  onclick="clickSingleA(this)" class="single active" href="home.html">Home</a>
-<!--
-        <a onclick="clickSingleA(this)" class="single" href="">Products</a>
-        <a onclick="clickSingleA(this)" class="single" href="">Contact</a>
-        <a onclick="clickSingleA(this)" class="single" href="login.html">Login</a>
--->
-        <input type="search" id="searchTxt" placeholder="Search your note">
-    </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="NotesMaking.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <header class="site-header">
         <div class="container">
-           <h1>Welcome to Magic Notes</h1>
-               <div class="form">
-                    <p>Add a title</p>
-                    <textarea id="addTitle" rows="2" cols="40"></textarea>
-                    <p>Add a note</p>
-                    <textarea id="addTxt" rows="3" style="width: 98%";></textarea>
-                    <br>
-                    <button id="addbtn">Add Note</button>
+            <nav class="nav-bar">
+                <div class="search-box">
+                    <input type="search" id="searchTxt" placeholder="Search your note">
                 </div>
-                <hr>
-                <h2>Your Notes</h2>
-                <hr>
-                <div id="notes">
-                
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="welcome-section">
+            <h1>Welcome to Notes Making</h1>
+        </section>
+
+        <section class="form-section">
+            <div class="form">
+                <label for="addTitle">Add a title</label>
+                <input type="text" id="addTitle">
+                <label for="addTxt">Add a note</label>
+                <textarea id="addTxt" rows="3"></textarea>
+                <button id="addbtn">Add Note</button>
+            </div>
+            <div id="toast" class="toast-message"></div>
+        </section>
+
+        <hr>
+
+        <section class="notes-section">
+            <h2>Your Notes</h2>
+            <div id="notes" class="note-list">
+                <!-- Notes will be dynamically added here -->
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p>Connect with me:</p>
+                    <a href="https://www.linkedin.com/in/vikrant-pathania-738955145/" class="linkedin-btn">LinkedIn</a>
                 </div>
+            </div>
+            <div class="copy">
+                <p>&copy; 2023 Vikrant Pathania. All rights reserved.</p>
+            </div>
         </div>
-<!--         <footer>
-        <div class="upper">
-          <a href="" id="gmail">Gmail</a>
-          <a href="" id="facebook">Facebook</a>
-          <a href="" id="linkedin">LinkedIn</a>
-          <a href="" id="github">GitHub</a>
-        </div><hr>
-        <div class="lower">
-          <p>Ok that's enough. Please have a look at my work.</p>
-          <p>&copy;Sample</p>
-        </div>
-    </footer> -->
-    </body>
-<!--<script src="RockPaperSicssors.js"></script> -->
-<script src="NotesMaking.js"></script>
+    </footer>
+    
+
+    <script src="NotesMaking.js"></script>
+</body>
+
 </html>
