@@ -1,127 +1,53 @@
-footer{
-/*    padding-top: 30px;*/
-    background-color: background-image: radial-gradient(
-      circle at 52% 84%,
-      rgba(194, 194, 194, 0.06) 0%,
-      rgba(194, 194, 194, 0.06) 18%,
-      transparent 18%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 38% 97%,
-      rgba(239, 239, 239, 0.06) 0%,
-      rgba(239, 239, 239, 0.06) 20%,
-      transparent 20%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 86% 17%,
-      rgba(210, 210, 210, 0.06) 0%,
-      rgba(210, 210, 210, 0.06) 61%,
-      transparent 61%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 6% 48%,
-      rgba(91, 91, 91, 0.06) 0%,
-      rgba(91, 91, 91, 0.06) 27%,
-      transparent 27%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 27% 63%,
-      rgba(86, 86, 86, 0.06) 0%,
-      rgba(86, 86, 86, 0.06) 30%,
-      transparent 30%,
-      transparent 100%
-    ),
-    radial-gradient(
-      circle at 2% 91%,
-      rgba(182, 182, 182, 0.06) 0%,
-      rgba(182, 182, 182, 0.06) 29%,
-      transparent 29%,
-      transparent 100%
-    ),
-    linear-gradient(90deg, rgb(203, 171, 120), rgb(227, 87, 5));
-    height: 200px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.site-footer {
+    background-color: #1d5668;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
 }
 
-.upper{
-    text-align: center;
-    background-color: hsl(200, 4%, 16%);
-    height: 100px;
-    padding: 10px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.upper a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    /* border: 2px solid black; */
-    padding: 4px 20px;
-    margin: 20px;
-    width: 30px;
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.linkedin-btn {
+    display: inline-block;
+    background-color: #0077B5; /* LinkedIn color */
+    color: #fff;
+    padding: 8px 20px;
     border-radius: 5px;
-}
-
-/* .upper a:hover{
-    margin: 25px;
-    font-size: 25px;
-    transition: 1s;
-} */
-
-#gmail{
-    background: linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
-}
-
-#facebook{
-    background-color: #3b5998;
-}
-
-#linkedin{
-    background: #0e76a8;
-}
-
-#github{
-    background: #4078c0;
-}
-
-.lower{
-    text-align: center;
-    /* margin-top: 20px; */
-    height: 60px;
-    padding: 20px;
-    background-color: hsl(200, 4%, 16%);
-    color: white;
-    text-transform: uppercase;
-    font-size: small;
-}
-
-.lower a{
-    color: red;
-    /* border: 2px solid red; */
-    font-size: 15px;
-    margin-left: 3px;
+    text-decoration: none;
     font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
 }
 
-.lower a:hover{
-    color: hsl(200, 4%, 16%);
-    background-color: red;
+.linkedin-btn:hover {
+    background-color: #005f91; /* Darker LinkedIn color on hover */
 }
 
-.two{
-    text-indent: 20px;
-    margin-top: 30px;
-    text-align: left;
+.copy {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
-.contact-us{
-    text-transform: uppercase;
-    margin: 10px 0px 20px 0px;
-    color: white;
+.copy p {
+    margin: 10px 0;
+    font-size: 14px;
 }
